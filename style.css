@@ -85,7 +85,10 @@ a {
 
 .project-card {
   aspect-ratio: 1.53 / 1;
-  background: #173fa8;
+  background-color: #173fa8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -97,7 +100,7 @@ a {
 
 .project:hover .project-card {
   transform: translateY(-3px);
-  background: #12358f;
+  filter: brightness(0.94);
 }
 
 .number {
@@ -201,3 +204,11 @@ a {
     gap: 12px;
   }
 }
+
+
+.project-card-1 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_BSpoke.jpg"); }
+.project-card-2 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Beatshare.jpg"); }
+.project-card-3 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_GallagherSeals.jpg"); }
+.project-card-4 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Pure.png"); }
+.project-card-5 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Spotify.jpg"); }
+.project-card-6 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_ThirtyOneLabs.png"); }

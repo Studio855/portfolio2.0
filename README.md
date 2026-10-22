@@ -18,4 +18,4 @@ No build step is required.
 5. Build command: none.
 6. Output directory: `.`
 
-The site loads **Inter** from Google Fonts. The project artwork is intentionally represented by six blue numbered placeholders, ready to be replaced with real project images later.
+The site loads **Inter** from Google Fonts. The six project cards use the Google Cloud Storage image URLs supplied for projects 1–6. The number and label remain overlaid on each image.
