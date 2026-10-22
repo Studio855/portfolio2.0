@@ -18,4 +18,4 @@ No build step is required.
 5. Build command: none.
 6. Output directory: `.`
 
-The site loads **Inter** from Google Fonts. The six project cards use the Google Cloud Storage image URLs supplied for projects 1–6. The number and label remain overlaid on each image.
+The site loads **Inter** from Google Fonts. The six project cards use the supplied Google Cloud Storage image URLs. Project names are shown as white labels over the images, with no numbered overlays.

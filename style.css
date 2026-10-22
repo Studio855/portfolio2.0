@@ -103,19 +103,13 @@ a {
   filter: brightness(0.94);
 }
 
-.number {
-  font-size: clamp(52px, 6vw, 86px);
-  line-height: .9;
-  font-weight: 500;
-  letter-spacing: -0.08em;
-}
-
 .label {
-  margin-top: 12px;
-  font-size: 10px;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  margin-top: 0;
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .project p {
@@ -194,11 +188,7 @@ a {
     aspect-ratio: 1.45 / 1;
   }
 
-  .number {
-    font-size: 68px;
-  }
-
-  .tennis-note {
+    .tennis-note {
     margin: 55px 0 70px;
     grid-template-columns: 1fr;
     gap: 12px;
