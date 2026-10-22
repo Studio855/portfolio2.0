@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-shell {
+  width: min(86vw, 1100px);
+  margin: 0 auto;
+}
+
+.site-header {
+  height: 49px;
+  border-bottom: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand,
+.site-header nav a,
+.site-footer {
+  font-size: 8px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.brand {
+  font-weight: 500;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 18px;
+}
+
+.site-header nav a {
+  transition: opacity 160ms ease;
+}
+
+.site-header nav a:hover {
+  opacity: 0.45;
+}
+
+.intro {
+  padding: 39px 0 37px;
+}
+
+.intro p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 20px;
+  row-gap: 39px;
+}
+
+.project {
+  display: block;
+}
+
+.project-card {
+  aspect-ratio: 1.53 / 1;
+  background: #173fa8;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.project:hover .project-card {
+  transform: translateY(-3px);
+  background: #12358f;
+}
+
+.number {
+  font-size: clamp(52px, 6vw, 86px);
+  line-height: .9;
+  font-weight: 500;
+  letter-spacing: -0.08em;
+}
+
+.label {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.project p {
+  margin: 7px 0 0;
+  font-size: 9px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.tennis-note {
+  margin: 74px 0 110px;
+  border-top: 1px solid #bdbdbd;
+  padding-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.tennis-note span {
+  font-size: 8px;
+  letter-spacing: 0.03em;
+}
+
+.tennis-note p {
+  margin: 0;
+  max-width: 420px;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+.site-footer {
+  min-height: 37px;
+  border-top: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .site-shell {
+    width: calc(100vw - 34px);
+  }
+
+  .site-header {
+    height: 43px;
+  }
+
+  .site-header nav {
+    gap: 11px;
+  }
+
+  .intro {
+    padding: 28px 0 28px;
+  }
+
+  .intro p {
+    font-size: 24px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-card {
+    aspect-ratio: 1.45 / 1;
+  }
+
+  .number {
+    font-size: 68px;
+  }
+
+  .tennis-note {
+    margin: 55px 0 70px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
