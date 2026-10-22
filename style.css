@@ -11,9 +11,10 @@ body {
   background: #fff;
   color: #111;
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -22,183 +23,169 @@ a {
 }
 
 .site-shell {
-  width: min(86vw, 1100px);
+  width: min(88vw, 1240px);
   margin: 0 auto;
 }
 
 .site-header {
-  height: 49px;
-  border-bottom: 1px solid #bdbdbd;
+  min-height: 54px;
+  border-bottom: 1px solid #d4d4d4;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.brand,
-.site-header nav a,
-.site-footer {
-  font-size: 8px;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0;
+  gap: 24px;
 }
 
 .brand {
-  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.site-header nav,
+.site-footer {
+  font-size: 9px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
 }
 
 .site-header nav {
   display: flex;
-  gap: 18px;
+  gap: 24px;
 }
 
-.site-header nav a {
+.site-header nav a,
+.site-footer a {
   transition: opacity 160ms ease;
 }
 
-.site-header nav a:hover {
-  opacity: 0.45;
+.site-header nav a:hover,
+.site-footer a:hover {
+  opacity: 0.48;
 }
 
 .intro {
-  padding: 39px 0 37px;
+  padding: 43px 0 42px;
 }
 
 .intro p {
   margin: 0;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: -0.045em;
-  font-weight: 600;
+  max-width: 700px;
+  font-size: clamp(17px, 1.65vw, 20px);
+  line-height: 1.32;
+  letter-spacing: -0.035em;
+  font-weight: 400;
 }
 
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 20px;
-  row-gap: 39px;
+  row-gap: 36px;
 }
 
 .project {
   display: block;
+  min-width: 0;
 }
 
 .project-card {
-  aspect-ratio: 1.53 / 1;
-  background-color: #173fa8;
+  aspect-ratio: 4 / 3;
+  background-color: #f0f0f0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: transform 180ms ease, background-color 180ms ease;
+  transition: filter 180ms ease;
 }
 
 .project:hover .project-card {
-  transform: translateY(-3px);
-  filter: brightness(0.94);
-}
-
-.label {
-  margin-top: 0;
-  padding: 10px 12px;
-  font-size: 12px;
-  line-height: 1.1;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  filter: brightness(0.96);
 }
 
 .project p {
-  margin: 7px 0 0;
-  font-size: 9px;
-  line-height: 1.25;
+  margin: 9px 0 0;
+  font-size: 12px;
+  line-height: 1.35;
   letter-spacing: -0.01em;
-}
-
-.tennis-note {
-  margin: 74px 0 110px;
-  border-top: 1px solid #bdbdbd;
-  padding-top: 14px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-}
-
-.tennis-note span {
-  font-size: 8px;
-  letter-spacing: 0.03em;
-}
-
-.tennis-note p {
-  margin: 0;
-  max-width: 420px;
-  font-size: 13px;
-  line-height: 1.3;
-  letter-spacing: -0.03em;
+  font-weight: 400;
 }
 
 .site-footer {
-  min-height: 37px;
-  border-top: 1px solid #bdbdbd;
+  min-height: 48px;
+  margin-top: 50px;
+  border-top: 1px solid #d4d4d4;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1px;
+  gap: 18px;
 }
 
-.site-footer a:hover {
-  text-decoration: underline;
-}
+.project-card-1 { background-image: url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_BSpoke.jpg"); }
+.project-card-2 { background-image: url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Beatshare.jpg"); }
+.project-card-3 { background-image: url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_GallagherSeals.jpg"); }
+.project-card-4 { background-image: url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Pure.png"); }
+.project-card-5 { background-image: url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Spotify.jpg"); }
+.project-card-6 { background-image: url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_ThirtyOneLabs.png"); }
 
 @media (max-width: 700px) {
   .site-shell {
-    width: calc(100vw - 34px);
+    width: calc(100vw - 32px);
   }
 
   .site-header {
-    height: 43px;
+    min-height: 48px;
   }
 
   .site-header nav {
-    gap: 11px;
+    gap: 13px;
+  }
+
+  .site-header nav,
+  .site-footer {
+    font-size: 8px;
   }
 
   .intro {
-    padding: 28px 0 28px;
+    padding: 30px 0 29px;
   }
 
   .intro p {
-    font-size: 24px;
-  }
-
-  .desktop-break {
-    display: none;
+    font-size: 18px;
+    line-height: 1.32;
   }
 
   .work-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    row-gap: 27px;
   }
 
   .project-card {
-    aspect-ratio: 1.45 / 1;
+    aspect-ratio: 4 / 3;
   }
 
-    .tennis-note {
-    margin: 55px 0 70px;
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .project p {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .site-footer {
+    margin-top: 36px;
+    min-height: 44px;
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-.project-card-1 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_BSpoke.jpg"); }
-.project-card-2 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Beatshare.jpg"); }
-.project-card-3 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_GallagherSeals.jpg"); }
-.project-card-4 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Pure.png"); }
-.project-card-5 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_Spotify.jpg"); }
-.project-card-6 { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.30)), url("https://storage.googleapis.com/pitchstudios/Portfolio2.0/Hero_ThirtyOneLabs.png"); }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
