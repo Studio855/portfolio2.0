@@ -38,7 +38,7 @@ a {
 }
 
 .brand {
-  font-size: 10px;
+  font-size: 50px;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.015em;
@@ -48,7 +48,7 @@ a {
 
 .site-header nav,
 .site-footer {
-  font-size: 9px;
+  font-size: 50px;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.015em;
@@ -76,7 +76,7 @@ a {
 .intro p {
   margin: 0;
   max-width: 800px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: clamp(20px, 1.75vw, 27px);
   line-height: 1.34;
   letter-spacing: -0.035em;
@@ -147,7 +147,15 @@ a {
     gap: 13px;
   }
 
-  .site-header nav,
+  .brand {
+    font-size: 24px;
+  }
+
+  .site-header nav {
+    font-size: 14px;
+    gap: 10px;
+  }
+
   .site-footer {
     font-size: 8px;
   }
